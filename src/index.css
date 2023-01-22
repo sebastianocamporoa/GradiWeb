@@ -1,17 +1,115 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #09f;
-  display: grid;
-  place-content: center;
-  height: 100px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
 }
 
-code {
+h1{
+  font-size: 48px;
+  font-weight: 800;
+  margin-top: 5%;
+  line-height: 72px;
+  color: #AE218F;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-image: linear-gradient(
+    to right top,
+    #fcfcfe,
+    #f9f9fe,
+    #f7f6fe,
+    #f5f2fe,
+    #f3effe,
+    #ece5fe,
+    #e6dafe,
+    #e1d0fd,
+    #d5bdfd,
+    #c9aafc,
+    #bd96fb,
+    #b083f9
+  );
+  /* display: grid;
+  place-content: center; */
+}
+
+.table-container {
+  padding: 0 10%;
+  margin: 40px auto 0;
+}
+
+.heading {
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #AA79F9;
+}
+.table thead th tr {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  color: #ffffff;
+  opacity: 1;
+  padding: 12px;
+  vertical-align: top;
+  border: 1px solid #dee2e685;
+}
+
+.table tbody tr td {
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  font-weight: normal;
+  color: #f1f1f1;
+  background-color: #C19CFB;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #dee2e685;
+}
+
+@media (max-width: 768px) {
+  .table thead {
+    display: none;
+  }
+  .table,
+  .table tbody,
+  .table tr,
+  table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 15px;
+  }
+  .table tbody tr td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
