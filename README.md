@@ -12,4 +12,5 @@ y para ejecutarlo debes ejecutar:
 
 **autor: Sebastián Ocampo Roa**
 
-Esta es una prueba técnica dirigida a la empresa GradiWeb
+Esta es una prueba técnica dirigida a la empresa GradiWeb, por favor tener en cuenta que para realizar alguna prueba, se debe ingresar datos de una tarjeta real, en la siguiente pagina se pueden generar datos temporales de tarjetas de credito.
+https://www.vccgenerator.org/es/generador-de-tarjeta-visa/
